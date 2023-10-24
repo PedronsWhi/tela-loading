@@ -1,0 +1,55 @@
+:root{
+    --counter: 0;
+}
+.container-barra{
+    position: relative;
+    width: 451px;
+    height: 14px;
+    border: solid 2px;
+    left: 525px;
+    border-radius: 10px;
+}
+.barra{
+    position: relative;
+    height: 100%;
+    border-radius: inherit;
+    background-color:#732be6 ;
+    animation-name: barra;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.barra::after{
+    content: var(--counter);
+    font-size: 20px;
+    display: block;
+    color: #fff;
+    text-align: right;
+}
+.imagem{
+   position: unset;
+    top: 100px;
+    left: 650px;
+    width: 270;
+    height: 295;
+    text-align: center;
+}
+
+@keyframes barra{
+
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 25%;
+    }
+    50%{
+width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
